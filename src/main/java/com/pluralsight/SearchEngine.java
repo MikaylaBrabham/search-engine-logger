@@ -30,5 +30,10 @@ public class SearchEngine {
             //add search for the term
             logAction("search : " + searchTerm);
         }
+
+        //add successful completion
+        System.out.println("Successfully Completed!");
     }
+
+    //create try catch for logaction file creation
 }
