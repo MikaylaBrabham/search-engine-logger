@@ -25,7 +25,7 @@ public class SearchEngine {
             System.out.println("Enter a search term (X to exit): ");
             String searchTerm = myscanner.nextLine();
 
-            if(searchTerm.equalsIgnoreCase("X")) {
+            if (searchTerm.equalsIgnoreCase("X")) {
                 logAction("exit");
                 break;
             }
@@ -41,7 +41,6 @@ public class SearchEngine {
     public static void logAction(String action) {
 
         //add try
-        try {
             try {
                 BufferedWriter writer = new BufferedWriter(new FileWriter("logs.txt", true));
 
@@ -64,7 +63,6 @@ public class SearchEngine {
                 System.out.println("Error writing the log file");
                 throw new RuntimeException(e);
             }
-
         }
     }
-}
+
