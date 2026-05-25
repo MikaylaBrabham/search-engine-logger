@@ -16,5 +16,7 @@ public class SearchEngine {
 
         //launch app
         logAction("launch");
+
+        //add while true
     }
 }
