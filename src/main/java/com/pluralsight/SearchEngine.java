@@ -18,5 +18,17 @@ public class SearchEngine {
         logAction("launch");
 
         //add while true
+        while (true) {
+            //add given search term
+            System.out.println("Enter a search term (X to exit): ");
+            String searchTerm = myscanner.nextLine();
+
+            if(searchTerm.equalsIgnoreCase("X")) {
+                logAction("exit");
+                break;
+            }
+            //add search for the term
+            logAction("search : " + searchTerm);
+        }
     }
 }
